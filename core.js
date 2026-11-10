@@ -153,7 +153,7 @@
   var app = document.getElementById('app'), topbar = document.getElementById('topbar');
   MG.setTop = function (title, back, chip) {
     topbar.innerHTML =
-      (back ? '<button class="back" data-go="' + U.esc(back) + '" aria-label="Go back">&#8592;</button>' : '<img class="brand-logo" ./icon-512.png" alt="My Grade, My Project">') +
+      (back ? '<button class="back" data-go="' + U.esc(back) + '" aria-label="Go back">&#8592;</button>' : '<(back ? '<button class="back" data-go="' + U.esc(back) + '" aria-label="Go back">&#8592;</button>' : '<img class="brand-logo" src="./icon-512.png" alt="My Grade, My Project">') +>') +
       '<div class="title-wrap"><div class="title">' + U.esc(title) + '</div><div class="top-subtitle">JUNIOR SCHOOL LEARNING HUB</div></div>' +
       '<span class="chip" id="chip">' + U.esc(chip != null ? chip : '★ ' + S.pts + ' pts') + '</span>';
   };
