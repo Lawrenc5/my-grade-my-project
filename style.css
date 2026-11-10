@@ -302,8 +302,8 @@ label.f { display: block; font-weight: 700; margin: 12px 0 4px; }
 @media (prefers-reduced-motion: reduce) {
   #jr-svg .cloud, #jr-svg .tree, #jr-svg .star, #jr-svg .flag, #jr-svg .stu .leg, #jr-svg .stu .arm, #jr-svg .stu .stu-flip { animation: none !important; }
   .brand-logo {
-  width: 42px;
-  height: 42px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
