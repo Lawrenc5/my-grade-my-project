@@ -302,15 +302,7 @@ label.f { display: block; font-weight: 700; margin: 12px 0 4px; }
 @media (prefers-reduced-motion: reduce) {
   #jr-svg .cloud, #jr-svg .tree, #jr-svg .star, #jr-svg .flag, #jr-svg .stu .leg, #jr-svg .stu .arm, #jr-svg .stu .stu-flip { animation: none !important; }
   .brand-mark { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; flex: none; background: #15988e; color: #fff; font-weight: 900; letter-spacing: -.08em; font-size: .9rem; }
-  .brand-logo {
-  width: 36px !important;
-  height: 36px !important;
-  max-width: 36px;
-  object-fit: contain;
-  display: block;
-  flex: 0 0 36px;
-  border-radius: 8px;
-    }
+  
   
                            }
 }
