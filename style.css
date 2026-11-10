@@ -301,4 +301,12 @@ label.f { display: block; font-weight: 700; margin: 12px 0 4px; }
 @keyframes jr-bob { from { transform: translateY(0); } to { transform: translateY(-1.2px); } }
 @media (prefers-reduced-motion: reduce) {
   #jr-svg .cloud, #jr-svg .tree, #jr-svg .star, #jr-svg .flag, #jr-svg .stu .leg, #jr-svg .stu .arm, #jr-svg .stu .stu-flip { animation: none !important; }
+  .brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  border-radius: 8px;
+                           }
 }
