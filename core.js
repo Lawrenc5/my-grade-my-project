@@ -152,11 +152,14 @@
   /* ---------- page frame ---------- */
   var app = document.getElementById('app'), topbar = document.getElementById('topbar');
   MG.setTop = function (title, back, chip) {
-    topbar.innerHTML =
-      (back ? '<button class="back" data-go="' + U.esc(back) + '" aria-label="Go back">&#8592;</button>' : '<(back ? '<button class="back" data-go="' + U.esc(back) + '" aria-label="Go back">&#8592;</button>' : '<img class="brand-logo" src="./icon-512.png" alt="My Grade, My Project">') +>') +
-      '<div class="title-wrap"><div class="title">' + U.esc(title) + '</div><div class="top-subtitle">JUNIOR SCHOOL LEARNING HUB</div></div>' +
-      '<span class="chip" id="chip">' + U.esc(chip != null ? chip : '★ ' + S.pts + ' pts') + '</span>';
-  };
+  topbar.innerHTML =
+    (back
+      ? '<button class="back" data-go="' + U.esc(back) + '" aria-label="Go back">&#8592;</button>'
+      : '<img class="brand-logo" src="./icon-512.png" alt="My Grade, My Project">') +
+    '<div class="title-wrap"><div class="title">' + U.esc(title) + '</div><div class="top-subtitle">JUNIOR SCHOOL LEARNING HUB</div></div>' +
+    '<span class="chip" id="chip">' + U.esc(chip != null ? chip : '★ ' + S.pts + ' pts') + '</span>';
+};
+  
   MG.refreshChip = function () {
     var c = document.getElementById('chip');
     if (c && c.getAttribute('data-fixed') !== '1' && /pts$/.test(c.textContent)) c.textContent = '★ ' + S.pts + ' pts';
